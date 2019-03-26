@@ -1,0 +1,142 @@
+/* CSS Document */
+
+:root {
+    /* COLOR VARIABLES */
+    --primary-bg-color: rgb(0, 0, 0);            /* Black */
+    --secondary-bg-color: rgb(22, 22, 22);       /* Dark Grey */
+    --primary-text-color: rgb(255, 255, 255);    /* White */
+    --secondary-text-color: rgb(152, 88, 211);   /* Light Urple */
+    --primary-accent: rgb(85, 41, 123);          /* Purple */
+    --secondary-accent: #FFC200;                 /* Gold */
+    
+    /* FONT VARIABLES */
+    --primary-font: 'Contrail One';
+    --secondary-font: 'Raleway';
+}
+
+/* SITEWITE */
+
+body {
+    background-color: var(--secondary-bg-color);
+    font-family: var(--secondary-font), cursive;
+}
+
+.purple {
+    color: var(--secondary-text-color);
+}
+
+@media (max-width: 768px) {
+    div.top-border {
+        border-top: solid medium;
+        border-color: var(--secondary-text-color); 
+        padding-top: 15px;
+    }
+}
+
+div.row {
+    padding: 10px;
+}
+
+/* NAVBAR */
+
+nav.navbar {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-content: center;
+    z-index: 1;
+}
+
+a.navbar-brand {
+    font-family: var(--primary-font), cursive;
+}
+
+nav.navbar div.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav.navbar div.row a {
+    margin-left: 0px;
+}
+
+nav.navbar div.row ul {
+    margin-right: 0px;
+    text-align: right;
+}
+
+nav.navbar div.row ul li {
+    text-align: center;
+    font-size-adjust: 90%;
+    font-weight: bold;
+    padding: 8px 0px 0px 0px;
+    margin: 0px;
+}
+a.nav-link {
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+nav.navbar div.row ul li a.nav-link:hover {
+    color: var(--secondary-text-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* BODY */
+
+h1, h2, h3 {
+    font-family: var(--primary-font), cursive;
+    color: var(--primary-text-color);
+    /*text-shadow: 3px 3px 3px #666;*/
+}
+
+.jumbotron {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+section {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    font-family: var(--secondary-font), sans-serif;
+}
+
+/* BUTTONS */
+
+.btn {
+    background-color: var(--primary-accent);
+    color: var(--primary-text-color);
+    font-weight: bold;
+    border: thin var(--primary-text-color);
+}
+
+.btn:hover {
+    background-color: var(--secondary-accent);
+    color: var(--primary-bg-color);
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    color: var(primary-text-color);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.footer-link {
+    color: var(--secondary-text-color);
+}
+
+.footer-link:hover {
+    color: var(--secondary-accent);
+}
