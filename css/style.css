@@ -57,6 +57,7 @@ nav.navbar {
     width: 100%;
     align-content: center;
     z-index: 1;
+    padding: 0px;
 }
 
 a.navbar-brand {
