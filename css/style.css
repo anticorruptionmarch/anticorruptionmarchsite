@@ -25,6 +25,10 @@ body {
     color: var(--secondary-text-color);
 }
 
+.purple-bg {
+    background-color: var(--primary-accent);
+}
+
 @media (max-width: 767px) {
     p.text-left-md {
         text-align: center;
