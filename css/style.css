@@ -25,11 +25,20 @@ body {
     color: var(--secondary-text-color);
 }
 
-@media (max-width: 768px) {
-    div.top-border {
-        border-top: solid medium;
-        border-color: var(--secondary-text-color); 
-        padding-top: 15px;
+@media (max-width: 767px) {
+    p.text-left-md {
+        text-align: center;
+    }
+    p.text-right-md {
+        text-align: center;
+    }
+}
+@media (min-width: 768px) {
+    p.text-left-md {
+        text-align: left;
+    }
+    p.text-right-md {
+        text-align: right;
     }
 }
 
