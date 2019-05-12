@@ -110,9 +110,9 @@ h1, h2, h3 {
 }
 
 .jumbotron {
-    background-image: url("../images/acm_L_TOP_black_04.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
+    background-image: url("../images/BG_img_01.jpg");
+    background-repeat: repeat;
+    background-position: center;
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     min-height: 200px;
@@ -120,9 +120,9 @@ h1, h2, h3 {
 }
 
 section {
-    background-image: url("../images/acm_R_TOP_charc_02.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
+    background-image: url("../images/BG_img_02.jpg");
+    background-repeat: repeat;
+    background-position: center;
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
     font-family: var(--secondary-font), sans-serif;
