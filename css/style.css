@@ -60,9 +60,13 @@ div.row {
 
 /* NAVBAR */
 
+.navbar {
+	background-color: var(--primary-accent) !important;
+}
+
 nav.navbar {
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
+    /*background-color: var(--secondary-bg-color);*/
+    color: var(--secondary-accent);
     position: fixed;
     top: 0;
     left: 0;
@@ -74,6 +78,8 @@ nav.navbar {
 
 a.navbar-brand {
     font-family: var(--primary-font), cursive;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav.navbar div.row {
@@ -83,6 +89,7 @@ nav.navbar div.row {
 
 nav.navbar div.row a {
     margin-left: 0px;
+	color: var(--primary-text-color);
 }
 
 nav.navbar div.row ul {
@@ -103,10 +110,20 @@ a.nav-link {
     vertical-align: middle;
     white-space: nowrap;
 }
+nav.navbar div.row ul li a.nav-link {
+	color: var(--primary-text-color);
+}
+nav.navbar div.row ul li.active a.nav-link {
+	color: var(--secondary-accent);
+}
 nav.navbar div.row ul li a.nav-link:hover {
-    color: var(--secondary-text-color);
+    color: var(--secondary-accent);
     text-decoration: underline;
     font-weight: bold;
+}
+
+header {
+	padding-top: 90px;
 }
 
 /* BODY */
@@ -125,7 +142,7 @@ h1, h2, h3 {
     color: var(--primary-text-color);
     min-height: 200px;
     margin: 0px;
-	padding: 32px;
+	padding: 32px 32px 32px 32px;
 }
 
 section {
