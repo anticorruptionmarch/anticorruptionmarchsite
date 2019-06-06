@@ -163,6 +163,7 @@ section {
     color: var(--secondary-accent);
     font-weight: bold;
     border: thin var(--primary-text-color);
+	margin: 5px;
 }
 
 .btn:hover {
