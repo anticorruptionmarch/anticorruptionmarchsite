@@ -8,6 +8,10 @@
     --secondary-text-color: rgb(152, 88, 211);   /* Light Urple */
     --primary-accent: rgb(85, 41, 123);          /* Purple */
     --secondary-accent: #FFC200;                 /* Gold */
+	
+	--color1: #55297B;
+	--color2: #161616;
+	
     
     /* FONT VARIABLES */
     --primary-font: 'Contrail One';
@@ -156,6 +160,33 @@ section {
     margin: 0px;
 }
 
+.bg-1 {
+	background-image: url("../images/bg_banner-G01.jpg");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.bg-1:hover {
+	background-image: url("../images/bg_banner-Yellow.jpg");
+    background-repeat: repeat;
+    background-position: center;
+	color: var(--color2);
+}
+
+.bg-2 {
+	background-image: url("../images/bg_banner-G02.jpg");
+    background-repeat: repeat;
+    background-position: center;
+	color: var(--color1);
+}
+
+.bg-2:hover {
+	background-image: url("../images/bg_banner-Lavender.jpg");
+    background-repeat: repeat;
+    background-position: center;
+	color: var(--primary-text-color);
+}
+
 a .readMore {
     display: none;
 }
@@ -173,8 +204,8 @@ a.collapsed .readLess {
 }
 
 .descriptionText:not(.show) {
-    min-height: 9.5em;
-    height: 9.5em;
+    min-height: 10.5em;
+    height: 10.5em;
     display: block;
     overflow: hidden;
 }
