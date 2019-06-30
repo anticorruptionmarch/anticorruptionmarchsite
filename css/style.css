@@ -156,6 +156,29 @@ section {
     margin: 0px;
 }
 
+a .readMore {
+    display: none;
+}
+
+a .readLess {
+    display: inline;
+}
+
+a.collapsed .readMore {
+    display: inline;
+}
+
+a.collapsed .readLess {
+    display: none;
+}
+
+.descriptionText:not(.show) {
+    min-height: 9.5em;
+    height: 9.5em;
+    display: block;
+    overflow: hidden;
+}
+
 /* BUTTONS */
 
 .btn {
