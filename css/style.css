@@ -194,6 +194,7 @@ section {
 	alignment-baseline: text-top;
 	margin: 0px;
 	padding: 8px;
+	cursor: pointer;
 }
 
 .panel-title span.arrow::before, .panel-title span.arrow::after {
