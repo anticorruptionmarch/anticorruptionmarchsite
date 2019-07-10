@@ -57,7 +57,7 @@
             <img class="img-fluid" alt="We need equal representation in our government" src="images/acm_hp_what_02_sm.png">
           </div>
         </div>-->
-        <div class="row">
+        <div class="row align-middle">
           <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <a class="btn" href="why_we_march.html" role="button"><span style="font-size: 200%">WE BELIEVE IN A GOVERNMENT FOR EVERYONE</span></a>
           </div>
@@ -77,8 +77,16 @@
             <div class="col-12">
                 <h2 class="text-center">CONTRIBUTE</h2>
                 <p class="text-center">Your donation is an opportunity to be part of something bigger. Give today!</p>
-                <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">DONATE NOW</a><br></p>
-                <p class="text-center"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Pay with PayPal or a debit/credit card" data-ux="Image" data-aid="PAYMENT_CREDIT_CARD_BADGES_RENDERED" style="width: 20%; height: 20%;"></p>
+                <form class="text-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" name="donate">
+					<input type="hidden" name="cmd" value="_donations" />
+					<input type="hidden" name="business" value="aj@anticorruptionmarch.com" />
+					<input type="hidden" name="item_name" value="Anti-Corruption March" />
+					<input type="hidden" name="currency_code" value="USD" />
+					<span class="btn btn-primary btn-lg contrail" onClick="donate.submit();" style="font-size: 165%;">CLICK HERE TO DONATE<br>
+					<!-- PayPal Logo --><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png" alt="PayPal" /><!-- PayPal Logo --></span>
+					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+				<!--https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=aj%40anticorruptionmarch.com&item_name=Anti-Corruption+March&currency_code=USD&source=url-->
             </div>
           </div>
         </div>
