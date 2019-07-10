@@ -33,6 +33,10 @@ body {
     color: var(--secondary-text-color);
 }
 
+.white {
+    color: var(--primary-text-color);
+}
+
 .purple-bg {
     background-color: var(--primary-accent);
 }
@@ -197,7 +201,8 @@ section {
 	cursor: pointer;
 }
 
-.panel-title span.arrow::before, .panel-title span.arrow::after {
+.panel-title[aria-expanded="false"] span.arrow::before, 
+.panel-title[aria-expanded="false"] span.arrow::after {
 	content: url("../images/arrow-down-gold-32.png");
 }
 
@@ -206,7 +211,8 @@ section {
 	content: url("../images/arrow-up-gold-32.png");
 }
 
-.panel-title:hover span.arrow::before, .panel-title:hover span.arrow::after {
+.panel-title[aria-expanded="false"]:hover span.arrow::before, 
+.panel-title[aria-expanded="false"]:hover span.arrow::after {
 	content: url("../images/arrow-down-purple-32.png");
 }
 
